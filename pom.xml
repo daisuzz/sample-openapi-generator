@@ -103,11 +103,11 @@
                             <inputSpec>
                                 ${project.basedir}/target/openapi.yaml
                             </inputSpec>
-                            <generatorName>java</generatorName>
-                            <output>${project.basedir}/generated/api-client</output>
+                            <output>
+                                ${project.basedir}/generated/api-client/${openapi.generator.maven.plugin.generatorName}
+                            </output>
                             <apiPackage>com.daisuzz.sampleapiclient.api</apiPackage>
                             <modelPackage>com.daisuzz.sampleapiclient.model</modelPackage>
-                            <invokerPackage>com.daisuzz.sampleapiclient.invoker</invokerPackage>
                             <packageName>com.daisuzz.sampleapiclient</packageName>
                             <groupId>com.daisuzz</groupId>
                             <artifactId>sample-api-client</artifactId>
